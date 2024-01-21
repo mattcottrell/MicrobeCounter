@@ -1,0 +1,7 @@
+;WinActivate, ZEN 3.3 (ZEN pro)
+;Winhide, ZEN 3.3 (ZEN pro)
+;WinShow, ZEN 3.3 (ZEN pro)
+;WinMaximize, ZEN 3.3 (ZEN pro)
+;#WinActivateForce, ZEN 3.3 (ZEN pro)
+WinSet, Top,, ZEN 3.3 (ZEN pro)
+;WinSet, AlwaysOnTop , On, ZEN 3.3 (ZEN pro)
