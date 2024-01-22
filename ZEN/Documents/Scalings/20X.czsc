@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Scaling>
+  <Metadata />
+  <AutoScaling>
+    <Type>Measured</Type>
+    <Objective>Objective.20x</Objective>
+    <Reflector>Reflector.000000-1092-429</Reflector>
+    <ObjectiveName>20x</ObjectiveName>
+    <ReflectorMagnification>1</ReflectorMagnification>
+    <CameraName>Axiocam 705</CameraName>
+    <CameraPixelDistance>3.45,3.45</CameraPixelDistance>
+    <CreationDateTime>05/30/2021 15:49:07</CreationDateTime>
+  </AutoScaling>
+  <Items>
+    <Distance Id="X">
+      <Value>2.6918051901059872E-07</Value>
+      <DefaultUnitFormat>µm</DefaultUnitFormat>
+    </Distance>
+    <Distance Id="Y">
+      <Value>2.6918051901059872E-07</Value>
+      <DefaultUnitFormat>µm</DefaultUnitFormat>
+    </Distance>
+  </Items>
+</Scaling>
