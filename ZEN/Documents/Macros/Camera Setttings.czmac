@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text>
+#hardwareSetting = ZenHardwareSetting()
+#hardwareSetting.Load("40X Objective")
+#Zen.Devices.ApplyHardwareSetting(hardwareSetting)
+
+Zen.Devices.ApplyHardwareSetting(ZenHardwareSetting.Load("40X Objective", ZenSettingDirectory.User))
+
+camerasetting = Zen.Acquisition.CameraSettings.GetByName("Live Dead MV Yeast Hemocytometer.czcs")
+Zen.Acquisition.ActiveCamera.ApplyCameraSetting(camerasetting)
+
+## Snap image
+#image = Zen.Acquisition.AcquireImage()
+#Zen.Application.Documents.ActiveDocument = image
+
+#ZenHardwareSetting.Load("40X Objective")
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>8</Row>
+  <Column>76</Column>
+</Script>

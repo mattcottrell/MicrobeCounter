@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text>
+
+
+# *************** Recorded Code Block ***************
+Zen.Acquisition.StartLive()
+liveimage1 = Zen.Application.Documents.GetByName("C:\Users\Cottrell\Pictures\temp\Live.czi")
+liveimage1.Graphics.HideGrid()
+image1 = Zen.Application.Documents.GetByName("C:\Users\Cottrell\Pictures\temp\Snap-06.czi")
+Zen.Application.Documents.ActiveDocument = image1
+Zen.Acquisition.StopLive()
+Zen.Application.Save(image1, "C:\\Users\\Cottrell\\Documents\\Snap-06.czi", True)
+
+# *************** End of Code Block *****************
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>11</Row>
+  <Column>82</Column>
+</Script>

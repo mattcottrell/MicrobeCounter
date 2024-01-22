@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text># *************** Recorded Code Block ***************
+#camerasetting1 = Zen.Acquisition.ActiveCamera.ReadCameraSetting()
+#camerasetting1.SetParameter('DualCameraCalibrationId', 'None')
+# *************** End of Code Block *****************
+
+
+
+#Zen.Acquisition.CameraSettings.GetByFileName("C:\Users\Cottrell\Documents\Carl Zeiss\ZEN\Documents\Camera Settings\Live Dead MV Yeast Hemocytometer.czcs")
+#hardwaresetting1 = Zen.Devices.HardwareSettings.GetByFileName("C:\Users\Cottrell\Documents\Carl Zeiss\ZEN\Documents\Hardware Settings\40X Objective.czhws")
+#Zen.Devices.ApplyHardwareSetting(hardwaresetting1)
+
+#hardwareSetting = Zen.Devices.ReadHardwareSetting()
+#hardwareSetting.SaveAs("my40X")
+hardwareSetting = ZenHardwareSetting()
+hardwareSetting.Load("40X Objective")
+Zen.Devices.ApplyHardwareSetting(hardwareSetting)
+
+myPosition = Zen.Devices.ObjectiveChanger.GetNameByPosition(2)
+
+print myPosition
+
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>15</Row>
+  <Column>36</Column>
+</Script>

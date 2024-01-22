@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text>
+from System.Diagnostics import Process
+
+window = ZenWindow()
+#Images = Zen.Application.Environment.GetFolderPath(ZenSpecialFolder.Images)
+#window.AddFolderBrowser('destpath','DestinationFolder: ',Images)
+#window.AddCheckbox('chkScale','Snap with scalebar ',False)
+window.AddTextBox('tval','Enter sample name:','sample')
+#window.AddDropDown('ddval','Image type:            ',['.CZI','.JPG','.JPEG','.BMP','.TIF','.TIFF'],0)
+#window.AddIntegerRange('ival','Number of images:',1,1,50)
+## do setup
+result=window.Show()
+## check, if Cancel button was clicked
+#if result.HasCanceled == True:
+#    sys.exit('Macro aborted with Cancel!')
+## get string name of path
+path = result.GetValue('destpath')
+## Check, if path exists
+#if (Directory.Exists(path)== False):
+    ##strMessage = 'Path: ' + path + ' does not exist!\nRestart macro and select an existing path!'
+#    strMessage = 'Path: ' + path + ' does not exist!\nCreating that folder now'
+#    os.mkdir(path)
+    ##sys.exit(strMessage)
+## get sample name
+sampleName = result.GetValue('tval')
+## check, if sample name is not empty
+thesamplename = sampleName.Trim()
+
+#thesamplename = "sample"
+
+#Process.Start("py.exe", "C:\Users\Cottrell\Documents\MicrobeCounter\YeastCounterWS.py" + " " + thesamplename)
+Process.Start("py.exe", "C:\\Users\\Cottrell\\Documents\\MicrobeCounter\\YeastCounterWS.py" + " " + thesamplename)
+
+#path = r"C:/Program Files/Chaos Group/V-Ray/Maya 2011 for x64/bin"
+#path = r"C:\Windows\py.exe"
+#execfile = "vrimg2exr.exe"
+#execfile = "py.exe"
+#CMDARGS = "%s %s" % (infile,outfile)
+#CMDARGS = "%s" % (r"C:\Users\Cottrell\Documents\MicrobeCounter\YeastCounterWS.py")
+#command = "%s\\%s" % (path,execfile)
+#print "starting command"
+#proc = Process()
+#proc.StartInfo.FileName = command
+#proc.StartInfo.Arguments = CMDARGS
+#proc.Start(command, CMDARGS,)
+#proc.Start("py.exe", "YeastCounterWS.py")
+#proc.WaitForExit()
+#print "Done"
+
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>27</Row>
+  <Column>11</Column>
+</Script>

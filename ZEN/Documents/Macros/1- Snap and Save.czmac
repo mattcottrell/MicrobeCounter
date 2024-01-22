@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text>#######################################################
+## A C Q U I S I T I O N
+##
+## Macro name: Demo - Snap and save user defined number of images
+##
+## Required demo files: no
+##
+## Required module/licence: no
+##
+## ENTER PATH, SAMPLE NAME, NUMBER OF IMAGES, IMAGE TYPE
+## SNAP IMAGES IN A LOOP, BURN IN SCALEBAR FOR NON-CZI IMAGES,
+## SAVE IMAGES AUTOMATICALLY
+## 
+#######################################################
+##
+##
+## activate IO library
+from System.IO import Directory
+from System.Diagnostics import Process
+import os
+
+##
+## create setup dialog
+window = ZenWindow()
+Images = Zen.Application.Environment.GetFolderPath(ZenSpecialFolder.Images)
+window.AddFolderBrowser('destpath','Destination Folder: ',Images)
+window.AddTextBox('tval','Enter sample name:','sample')
+window.AddDropDown('ddval','Image type:            ',['.TIF','.CZI','.JPG'],0)
+window.AddIntegerRange('ival','Number of images:',10,1,10)
+window.AddCheckbox('chkPreview','Test Focus ',True)
+
+## do setup
+result=window.Show()
+
+## check, if Cancel button was clicked
+if result.HasCanceled == True:
+    sys.exit('Macro aborted with Cancel!')
+## get string name of path
+path = result.GetValue('destpath')
+## Check, if path exists
+if (Directory.Exists(path)== False):
+    ##strMessage = 'Path: ' + path + ' does not exist!\nRestart macro and select an existing path!'
+    strMessage = 'Path: ' + path + ' does not exist!\nCreating that folder now'
+    os.mkdir(path)
+    ##sys.exit(strMessage)
+## get sample name
+sampleName = result.GetValue('tval')
+## check, if sample name is not empty
+sampleName = sampleName.Trim()
+#if sampleName != "":
+if sampleName == "":
+    strMessage = 'Sample name is empty!\nRestart macro and enter a sample name!'
+    sys.exit(strMessage)
+## Get image number, image type, preview
+imageNumber = result.GetValue('ival')
+imageType = str(result.GetValue('ddval')).strip()
+preview = result.GetValue('chkPreview')
+##
+## IMAGES
+## loop over number of images
+count = 0
+for i in range(0,imageNumber): 
+    ## Show live image
+    live = Zen.Acquisition.StartLive()
+    
+    ## Zen.Application.ActiveDocument = live
+    ## Set exposure time (AutoExposure)
+    ##Zen.Acquisition.AutoExposure()
+    
+    ## Set exposure time (preview a acquired images have the same exposure time)
+    Zen.Acquisition.ActiveCamera.ExposureTime = 150
+    
+    ## Show pause dialog
+    if preview == True:
+        Zen.Application.Pause("Move to next field and adjust focus to test counting\n\nUse Filter 4 (I3)")
+    elif preview == False:
+        Zen.Application.Pause("Move to next field\nand acquire image number: " + str(i+1) + "  of  " + str(imageNumber))
+
+    ## Snap image
+    image = Zen.Acquisition.AcquireImage()
+    
+    ##Zen.Application.ActiveDocument = image
+    ## Define sample name and image number
+    if preview == True:
+        newFileName = sampleName + "TEST" + imageType
+    elif preview == False:
+        newFileName = sampleName + str(i+1) + imageType
+        
+    # define the path and file name
+    newPathAndFile = path + "\\" +  newFileName
+    ## Process for Preview
+    if preview == True:
+        #image.InsertDefaultScaleBarGraphic()
+        #if imageType &lt;&gt; '.CZI':
+            ## Burn in scalebar for non-CZI images
+            #AnnoImage = image.BurnInGraphics()
+            ## Save the image with scalebar automatically
+            #Zen.Application.Save(AnnoImage,newPathAndFile)  
+            #AnnoImage.Close()
+        #if imageType == '.CZI':     
+            #Zen.Application.Save("C:\Users\Cottrell\Documents\MicrobeCounter\temp\ + "\" + "test" + imageType)
+            ###### Process and Preview #######
+        #Process.Start("py.exe", "C:\\Users\\Cottrell\\Documents\\MicrobeCounter\\YeastCounterWS.py" + " " + thesamplename)
+        
+        # save test foucus images to the test folder
+        #"C:\Users\Cottrell\Documents\MicrobeCounter\temp"
+        newPathAndFile = "C:\Users\Cottrell\Documents\MicrobeCounter" + "\\" + "temp" + "\\" +  newFileName
+        
+        print("newPathAndFile :" + newPathAndFile)
+        #newPathAndFile.Replace("\\","z")
+        #print("newPathAndFile with z :" + newPathAndFile)
+        
+        ## Save the image automatically
+        Zen.Application.Save(image,newPathAndFile)  
+        Process.Start("py.exe", "C:\\Users\\Cottrell\\Documents\\MicrobeCounter\\YeastCounterWS.py" + " " + newPathAndFile + " " + str(preview))
+        #Process.Start("py.exe", "C:\\Users\\Cottrell\\Documents\\MicrobeCounter\\YeastCounterWS.py" + " " + newPathAndFile)
+
+        #window.AddIntegerRange('ival','Number of images:',imageNumber,1,10)
+        result=window.Show()
+        
+    elif preview == False:
+        ## Save the image automatically
+        Zen.Application.Save(image,newPathAndFile)  
+        count = count + 1
+
+    ## Close image
+    image.Graphics.Clear()
+    image.Close()
+    
+## Close live image
+Zen.Acquisition.StopLive()
+
+##
+## end of loop 
+## IMAGES
+##
+## Show message
+strMessage = str(count) + ' Images are saved in: \n' + path
+Zen.Application.Pause(strMessage)
+image.Close()
+##
+#######################################################
+
+# *************** Recorded Code Block ***************
+# *************** End of Code Block *****************
+# *************** Recorded Code Block ***************
+# *************** End of Code Block *****************
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>117</Row>
+  <Column>1</Column>
+</Script>
