@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text># *************** Recorded Code Block ***************
+Zen.Acquisition.ActiveCamera.ExposureTime = 12120
+Zen.Acquisition.ActiveCamera.ExposureTime = 120
+# *************** End of Code Block *****************
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>3</Row>
+  <Column>3</Column>
+</Script>

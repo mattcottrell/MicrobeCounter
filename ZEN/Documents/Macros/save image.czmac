@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text># *************** Recorded Code Block ***************
+image1 = Zen.Application.Documents.GetByName("Snap-342.tif")
+Zen.Application.Save(image1, "C:\\Users\\Cottrell\\Pictures\\Test11\\Snap-342.tif", 100, ZenSaveCompressionMode.Uncompressed)
+
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>5</Row>
+  <Column>1</Column>
+</Script>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text>
+
+
+# *************** Recorded Code Block ***************
+Zen.Acquisition.StartLive()
+liveimage1 = Zen.Application.Documents.GetByName("C:\Users\Cottrell\Pictures\temp\Live.czi")
+#liveimage1.Graphics.HideGrid()
+#Zen.Acquisition.StopLive()
+# *************** End of Code Block *****************
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>8</Row>
+  <Column>2</Column>
+</Script>

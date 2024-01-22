@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Context>Zen26</Context>
+  <Version>1.0</Version>
+  <Language>Python</Language>
+  <Text>import subprocess
+process = subprocess.Popen(['C:\Windows\py.exe C:\Users\Cottrell\Documents\MicrobeCounter\YeastCounterWS.py'],
+                     stdout=subprocess.PIPE, 
+                     stderr=subprocess.PIPE)
+stdout, stderr = process.communicate()
+stdout, stderr
+</Text>
+  <Author></Author>
+  <Description></Description>
+  <Keywords></Keywords>
+  <Row>1</Row>
+  <Column>18</Column>
+</Script>
