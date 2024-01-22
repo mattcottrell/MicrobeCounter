@@ -1,0 +1,677 @@
+<CameraParameterCollection Name="ParameterCollection">
+  <AcquisitionFrame>0,0,1024,1024</AcquisitionFrame>
+  <AcquisitionFrame.Enabled>true</AcquisitionFrame.Enabled>
+  <AcquisitionFrame.GuiHint>GuiRect</AcquisitionFrame.GuiHint>
+  <AcquisitionFrame.Label>Acquire|Acquisition Frame</AcquisitionFrame.Label>
+  <AcquisitionFrame.Max>0,0,1024,1024</AcquisitionFrame.Max>
+  <AcquisitionFrame.Mode>Debug, NoPersist</AcquisitionFrame.Mode>
+  <AcquisitionFrame.Type>RectType</AcquisitionFrame.Type>
+  <AdaptExposureByBinningChange>false</AdaptExposureByBinningChange>
+  <AdaptExposureByBinningChange.Default>false</AdaptExposureByBinningChange.Default>
+  <AdaptExposureByBinningChange.Enabled>true</AdaptExposureByBinningChange.Enabled>
+  <AdaptExposureByBinningChange.GuiHint>GuiCheckBox</AdaptExposureByBinningChange.GuiHint>
+  <AdaptExposureByBinningChange.Label>Binning-independent Brightness</AdaptExposureByBinningChange.Label>
+  <AdaptExposureByBinningChange.Type>BoolType</AdaptExposureByBinningChange.Type>
+  <Adjust>1</Adjust>
+  <Adjust.Default>1</Adjust.Default>
+  <Adjust.Enabled>true</Adjust.Enabled>
+  <Adjust.GuiHint>GuiSlider</Adjust.GuiHint>
+  <Adjust.Increment>0.05</Adjust.Increment>
+  <Adjust.Max>2</Adjust.Max>
+  <Adjust.Min>0.05</Adjust.Min>
+  <Adjust.Type>DoubleType</Adjust.Type>
+  <AdjustFrameRate>true</AdjustFrameRate>
+  <AdjustFrameRate.Default>true</AdjustFrameRate.Default>
+  <AdjustFrameRate.DisplayOrder>201</AdjustFrameRate.DisplayOrder>
+  <AdjustFrameRate.Enabled>true</AdjustFrameRate.Enabled>
+  <AdjustFrameRate.GuiHint>GuiCheckBox</AdjustFrameRate.GuiHint>
+  <AdjustFrameRate.Label>Acquire|Adjust Live Frame Rate</AdjustFrameRate.Label>
+  <AdjustFrameRate.Mode>Expert</AdjustFrameRate.Mode>
+  <AdjustFrameRate.Type>BoolType</AdjustFrameRate.Type>
+  <ApplyCameraProfile>false</ApplyCameraProfile>
+  <ApplyCameraProfile.Default>false</ApplyCameraProfile.Default>
+  <ApplyCameraProfile.DisplayOrder>430</ApplyCameraProfile.DisplayOrder>
+  <ApplyCameraProfile.Enabled>true</ApplyCameraProfile.Enabled>
+  <ApplyCameraProfile.GuiHint>GuiCheckBox</ApplyCameraProfile.GuiHint>
+  <ApplyCameraProfile.Label>Post Processing|Apply Color Profile</ApplyCameraProfile.Label>
+  <ApplyCameraProfile.Mode>Expert</ApplyCameraProfile.Mode>
+  <ApplyCameraProfile.Type>BoolType</ApplyCameraProfile.Type>
+  <ApplyImageOrientation>true</ApplyImageOrientation>
+  <ApplyImageOrientation.Default>true</ApplyImageOrientation.Default>
+  <ApplyImageOrientation.Type>BoolType</ApplyImageOrientation.Type>
+  <AsynchronousImageDelivery>false</AsynchronousImageDelivery>
+  <AsynchronousImageDelivery.Default></AsynchronousImageDelivery.Default>
+  <AsynchronousImageDelivery.DisplayOrder>400</AsynchronousImageDelivery.DisplayOrder>
+  <AsynchronousImageDelivery.Enabled>true</AsynchronousImageDelivery.Enabled>
+  <AsynchronousImageDelivery.GuiHint>GuiCheckBox</AsynchronousImageDelivery.GuiHint>
+  <AsynchronousImageDelivery.Label>Acquire|Asynchronous Image Delivery</AsynchronousImageDelivery.Label>
+  <AsynchronousImageDelivery.Mode>Expert</AsynchronousImageDelivery.Mode>
+  <AsynchronousImageDelivery.Type>BoolType</AsynchronousImageDelivery.Type>
+  <AutoExposure>false</AutoExposure>
+  <AutoExposure.Default>false</AutoExposure.Default>
+  <AutoExposure.Enabled>true</AutoExposure.Enabled>
+  <AutoExposure.GuiHint>GuiCheckBox</AutoExposure.GuiHint>
+  <AutoExposure.Type>BoolType</AutoExposure.Type>
+  <AutoExposureFrame>Empty</AutoExposureFrame>
+  <AutoExposureFrame.Default>Empty</AutoExposureFrame.Default>
+  <AutoExposureFrame.Enabled>true</AutoExposureFrame.Enabled>
+  <AutoExposureFrame.GuiHint>GuiNone</AutoExposureFrame.GuiHint>
+  <AutoExposureFrame.Type>RectType</AutoExposureFrame.Type>
+  <AutoExposureTolerance>0.05</AutoExposureTolerance>
+  <AutoExposureTolerance.Default>0.05</AutoExposureTolerance.Default>
+  <AutoExposureTolerance.Enabled>true</AutoExposureTolerance.Enabled>
+  <AutoExposureTolerance.GuiHint>GuiSlider</AutoExposureTolerance.GuiHint>
+  <AutoExposureTolerance.Increment>1E-06</AutoExposureTolerance.Increment>
+  <AutoExposureTolerance.Max>10</AutoExposureTolerance.Max>
+  <AutoExposureTolerance.Min>0</AutoExposureTolerance.Min>
+  <AutoExposureTolerance.Mode>Debug</AutoExposureTolerance.Mode>
+  <AutoExposureTolerance.Type>DoubleType</AutoExposureTolerance.Type>
+  <Binning>1,1</Binning>
+  <Binning.Default>1,1</Binning.Default>
+  <Binning.GuiHint>GuiNone</Binning.GuiHint>
+  <Binning.Type>SizeType</Binning.Type>
+  <BinningExposureDependency>2</BinningExposureDependency>
+  <BinningExposureDependency.Default>2</BinningExposureDependency.Default>
+  <BinningExposureDependency.GuiHint>GuiTextBox</BinningExposureDependency.GuiHint>
+  <BinningExposureDependency.Label>Binning Exposure Dependency</BinningExposureDependency.Label>
+  <BinningExposureDependency.Mode>Debug, NoPersist</BinningExposureDependency.Mode>
+  <BinningExposureDependency.Readonly>true</BinningExposureDependency.Readonly>
+  <BinningExposureDependency.Type>IntegerType</BinningExposureDependency.Type>
+  <BinningList>0</BinningList>
+  <BinningList.Default>0</BinningList.Default>
+  <BinningList.Enabled>true</BinningList.Enabled>
+  <BinningList.GuiHint>GuiComboBox</BinningList.GuiHint>
+  <BinningList.ListItems>0|1x1|1x1,1|2x2|2x2,2|4x4|4x4</BinningList.ListItems>
+  <BinningList.Type>IntegerType</BinningList.Type>
+  <BlackReference>false</BlackReference>
+  <BlackReference.Default>false</BlackReference.Default>
+  <BlackReference.Enabled>false</BlackReference.Enabled>
+  <BlackReference.GuiHint>GuiCheckBox</BlackReference.GuiHint>
+  <BlackReference.Type>BoolType</BlackReference.Type>
+  <BlackReferenceId>None</BlackReferenceId>
+  <BlackReferenceId.Mode>Internal</BlackReferenceId.Mode>
+  <CalculateExposureMaximum>10000</CalculateExposureMaximum>
+  <CalculateExposureMaximum.Default>10000</CalculateExposureMaximum.Default>
+  <CalculateExposureMaximum.Enabled>true</CalculateExposureMaximum.Enabled>
+  <CalculateExposureMaximum.GuiHint>GuiNone</CalculateExposureMaximum.GuiHint>
+  <CalculateExposureMaximum.Increment>1</CalculateExposureMaximum.Increment>
+  <CalculateExposureMaximum.Max>10000</CalculateExposureMaximum.Max>
+  <CalculateExposureMaximum.Min>10</CalculateExposureMaximum.Min>
+  <CalculateExposureMaximum.Type>DoubleType</CalculateExposureMaximum.Type>
+  <CalculateExposureTimeResult></CalculateExposureTimeResult>
+  <CalculateExposureTimeResult.Default></CalculateExposureTimeResult.Default>
+  <CalculateExposureTimeResult.Readonly>true</CalculateExposureTimeResult.Readonly>
+  <CalculateExposureTimeResult.Type>StringType</CalculateExposureTimeResult.Type>
+  <CallbackAction>1</CallbackAction>
+  <CallbackAction.Default>0</CallbackAction.Default>
+  <CallbackAction.GuiHint>GuiNone</CallbackAction.GuiHint>
+  <CallbackAction.Mode>Internal</CallbackAction.Mode>
+  <CallbackAction.Readonly>true</CallbackAction.Readonly>
+  <CallbackAction.Type>IntegerType</CallbackAction.Type>
+  <CameraBias>0</CameraBias>
+  <CameraBias.Default>0</CameraBias.Default>
+  <CameraBias.DisplayOrder>402</CameraBias.DisplayOrder>
+  <CameraBias.Enabled>false</CameraBias.Enabled>
+  <CameraBias.GuiHint>GuiSlider</CameraBias.GuiHint>
+  <CameraBias.Increment>1</CameraBias.Increment>
+  <CameraBias.Label>Acquire|Camera Bias</CameraBias.Label>
+  <CameraBias.Max>2000</CameraBias.Max>
+  <CameraBias.Min>0</CameraBias.Min>
+  <CameraBias.Readonly>false</CameraBias.Readonly>
+  <CameraBias.Type>IntegerType</CameraBias.Type>
+  <CameraBitDepth>12</CameraBitDepth>
+  <CameraBitDepth.Default>8</CameraBitDepth.Default>
+  <CameraBitDepth.DisplayOrder>401</CameraBitDepth.DisplayOrder>
+  <CameraBitDepth.Enabled>true</CameraBitDepth.Enabled>
+  <CameraBitDepth.GuiHint>GuiSlider</CameraBitDepth.GuiHint>
+  <CameraBitDepth.Increment>1</CameraBitDepth.Increment>
+  <CameraBitDepth.Max>16</CameraBitDepth.Max>
+  <CameraBitDepth.Min>8</CameraBitDepth.Min>
+  <CameraBitDepth.Type>IntegerType</CameraBitDepth.Type>
+  <CameraDisplayName>Test Camera</CameraDisplayName>
+  <CameraDisplayName.Default></CameraDisplayName.Default>
+  <CameraDisplayName.GuiHint>GuiNone</CameraDisplayName.GuiHint>
+  <CameraDisplayName.Mode>Expert, NoPersist</CameraDisplayName.Mode>
+  <CameraDisplayName.Readonly>true</CameraDisplayName.Readonly>
+  <CameraDisplayName.Type>StringType</CameraDisplayName.Type>
+  <CameraIdentifier>TestCam_S0</CameraIdentifier>
+  <CameraIdentifier.Default></CameraIdentifier.Default>
+  <CameraIdentifier.DisplayOrder>-999</CameraIdentifier.DisplayOrder>
+  <CameraIdentifier.GuiHint>GuiTextBox</CameraIdentifier.GuiHint>
+  <CameraIdentifier.Label>Camera Identifier</CameraIdentifier.Label>
+  <CameraIdentifier.Readonly>true</CameraIdentifier.Readonly>
+  <CameraIdentifier.Type>StringType</CameraIdentifier.Type>
+  <CameraOrientation>0</CameraOrientation>
+  <CameraOrientation.ListItems>0|Original|Original,1|Flip|Flip Horizontally,2|Reverse|Flip Vertically,4|Rotate|Rotate 90 CW,7|FlipReverseRotate|Rotate 90 CCW,3|FlipReverse|Rotate 180,6|ReverseRotate|Mirror at +45 Diagonal,5|FlipRotate|Mirror at -45 Diagonal</CameraOrientation.ListItems>
+  <CameraOrientation.Readonly>true</CameraOrientation.Readonly>
+  <CameraOrientation.Type>IntegerType</CameraOrientation.Type>
+  <CameraPixelAccuracy>0.000244140625</CameraPixelAccuracy>
+  <CameraPixelAccuracy.Default>0.00390625</CameraPixelAccuracy.Default>
+  <CameraPixelAccuracy.Readonly>true</CameraPixelAccuracy.Readonly>
+  <CameraPixelAccuracy.Type>DoubleType</CameraPixelAccuracy.Type>
+  <CameraPixelDistances>1,1</CameraPixelDistances>
+  <CameraPixelDistances.Readonly>true</CameraPixelDistances.Readonly>
+  <CameraPixelDistances.Type>SizeType</CameraPixelDistances.Type>
+  <CameraPixelMaximum>4095</CameraPixelMaximum>
+  <CameraPixelMaximum.Default>255</CameraPixelMaximum.Default>
+  <CameraPixelMaximum.Readonly>true</CameraPixelMaximum.Readonly>
+  <CameraPixelMaximum.Type>IntegerType</CameraPixelMaximum.Type>
+  <CameraPixelMinimum>0</CameraPixelMinimum>
+  <CameraPixelMinimum.Default>0</CameraPixelMinimum.Default>
+  <CameraPixelMinimum.Readonly>true</CameraPixelMinimum.Readonly>
+  <CameraPixelMinimum.Type>IntegerType</CameraPixelMinimum.Type>
+  <CameraPixelType>Gray16</CameraPixelType>
+  <CameraPixelType.Default>0</CameraPixelType.Default>
+  <CameraPixelType.Readonly>true</CameraPixelType.Readonly>
+  <CameraPixelType.Type>IntegerType</CameraPixelType.Type>
+  <CameraProfile>*srgb</CameraProfile>
+  <CameraProfile.Default>*srgb</CameraProfile.Default>
+  <CameraProfile.DisplayOrder>431</CameraProfile.DisplayOrder>
+  <CameraProfile.Enabled>true</CameraProfile.Enabled>
+  <CameraProfile.GuiHint>GuiTextBox</CameraProfile.GuiHint>
+  <CameraProfile.Label>Post Processing|Color Profile</CameraProfile.Label>
+  <CameraProfile.Mode>Expert</CameraProfile.Mode>
+  <CameraProfile.Type>StringType</CameraProfile.Type>
+  <CameraStatus></CameraStatus>
+  <CameraStatus.Default></CameraStatus.Default>
+  <CameraStatus.Readonly>true</CameraStatus.Readonly>
+  <CameraStatus.Type>StringType</CameraStatus.Type>
+  <ColorMode>0</ColorMode>
+  <ColorMode.Default>1</ColorMode.Default>
+  <ColorMode.Enabled>true</ColorMode.Enabled>
+  <ColorMode.GuiHint>GuiComboBox</ColorMode.GuiHint>
+  <ColorMode.ListItems>0|0|Monochrome,1|1|Color</ColorMode.ListItems>
+  <ColorMode.Readonly>false</ColorMode.Readonly>
+  <ColorMode.Type>IntegerType</ColorMode.Type>
+  <ContinuousAcquisitionMode>0</ContinuousAcquisitionMode>
+  <ContinuousAcquisitionMode.Default>0</ContinuousAcquisitionMode.Default>
+  <ContinuousAcquisitionMode.DisplayOrder>100</ContinuousAcquisitionMode.DisplayOrder>
+  <ContinuousAcquisitionMode.Enabled>true</ContinuousAcquisitionMode.Enabled>
+  <ContinuousAcquisitionMode.GuiHint>GuiComboBox</ContinuousAcquisitionMode.GuiHint>
+  <ContinuousAcquisitionMode.Label>Acquire|Continuous Mode</ContinuousAcquisitionMode.Label>
+  <ContinuousAcquisitionMode.ListItems>0|Normal|Normal,1|Burst|Burst,3|BlockScan|BlockScan</ContinuousAcquisitionMode.ListItems>
+  <ContinuousAcquisitionMode.Mode>Expert, NoPersist</ContinuousAcquisitionMode.Mode>
+  <ContinuousAcquisitionMode.Type>IntegerType</ContinuousAcquisitionMode.Type>
+  <CurrentImage></CurrentImage>
+  <CurrentImage.Default></CurrentImage.Default>
+  <CurrentImage.DisplayOrder>421</CurrentImage.DisplayOrder>
+  <CurrentImage.Enabled>true</CurrentImage.Enabled>
+  <CurrentImage.GuiHint>GuiTextBox</CurrentImage.GuiHint>
+  <CurrentImage.Label>Acquire|Current Image</CurrentImage.Label>
+  <CurrentImage.Mode>NoPersist</CurrentImage.Mode>
+  <CurrentImage.Readonly>true</CurrentImage.Readonly>
+  <CurrentImage.Type>StringType</CurrentImage.Type>
+  <DefaultDisplayGamma>1</DefaultDisplayGamma>
+  <DefaultDisplayGamma.Default>1</DefaultDisplayGamma.Default>
+  <DefaultDisplayGamma.GuiHint>GuiNone</DefaultDisplayGamma.GuiHint>
+  <DefaultDisplayGamma.Increment>0.01</DefaultDisplayGamma.Increment>
+  <DefaultDisplayGamma.Max>3</DefaultDisplayGamma.Max>
+  <DefaultDisplayGamma.Min>0.3</DefaultDisplayGamma.Min>
+  <DefaultDisplayGamma.Mode>NoPersist</DefaultDisplayGamma.Mode>
+  <DefaultDisplayGamma.Type>DoubleType</DefaultDisplayGamma.Type>
+  <DeliverReferenceData>false</DeliverReferenceData>
+  <DeliverReferenceData.Default></DeliverReferenceData.Default>
+  <DeliverReferenceData.Enabled>true</DeliverReferenceData.Enabled>
+  <DeliverReferenceData.GuiHint>GuiCheckBox</DeliverReferenceData.GuiHint>
+  <DeliverReferenceData.Label>Post Processing|Deliver Reference Data</DeliverReferenceData.Label>
+  <DeliverReferenceData.Mode>Expert</DeliverReferenceData.Mode>
+  <DeliverReferenceData.Type>BoolType</DeliverReferenceData.Type>
+  <DisplayCurrentImage>false</DisplayCurrentImage>
+  <DisplayCurrentImage.Default></DisplayCurrentImage.Default>
+  <DisplayCurrentImage.DisplayOrder>420</DisplayCurrentImage.DisplayOrder>
+  <DisplayCurrentImage.Enabled>true</DisplayCurrentImage.Enabled>
+  <DisplayCurrentImage.GuiHint>GuiCheckBox</DisplayCurrentImage.GuiHint>
+  <DisplayCurrentImage.Label>Acquire|Display Current Image</DisplayCurrentImage.Label>
+  <DisplayCurrentImage.Type>BoolType</DisplayCurrentImage.Type>
+  <DualCameraCalibration>false</DualCameraCalibration>
+  <DualCameraCalibration.Default>false</DualCameraCalibration.Default>
+  <DualCameraCalibration.Enabled>false</DualCameraCalibration.Enabled>
+  <DualCameraCalibration.GuiHint>GuiCheckBox</DualCameraCalibration.GuiHint>
+  <DualCameraCalibration.Type>BoolType</DualCameraCalibration.Type>
+  <DualCameraCalibrationId></DualCameraCalibrationId>
+  <EMGain>0</EMGain>
+  <EMGain.Default>0</EMGain.Default>
+  <EMGain.Enabled>true</EMGain.Enabled>
+  <EMGain.GuiHint>GuiSlider</EMGain.GuiHint>
+  <EMGain.Increment>1</EMGain.Increment>
+  <EMGain.Max>255</EMGain.Max>
+  <EMGain.Min>0</EMGain.Min>
+  <EMGain.Type>DoubleType</EMGain.Type>
+  <ExperimentalImageFile></ExperimentalImageFile>
+  <ExperimentalImageFile.Default></ExperimentalImageFile.Default>
+  <ExperimentalImageFile.Enabled>true</ExperimentalImageFile.Enabled>
+  <ExperimentalImageFile.GuiHint>GuiTextBox</ExperimentalImageFile.GuiHint>
+  <ExperimentalImageFile.Label>Acquire|Experimental Image File</ExperimentalImageFile.Label>
+  <ExperimentalImageFile.Type>StringType</ExperimentalImageFile.Type>
+  <ExposureDelay>0</ExposureDelay>
+  <ExposureDelay.Default>0</ExposureDelay.Default>
+  <ExposureDelay.DisplayOrder>-1</ExposureDelay.DisplayOrder>
+  <ExposureDelay.Enabled>true</ExposureDelay.Enabled>
+  <ExposureDelay.GuiHint>GuiSlider</ExposureDelay.GuiHint>
+  <ExposureDelay.Increment>1</ExposureDelay.Increment>
+  <ExposureDelay.Label>Acquire|Acquisition Delay</ExposureDelay.Label>
+  <ExposureDelay.Max>1000</ExposureDelay.Max>
+  <ExposureDelay.Min>0</ExposureDelay.Min>
+  <ExposureDelay.Mode>Expert</ExposureDelay.Mode>
+  <ExposureDelay.Type>DoubleType</ExposureDelay.Type>
+  <ExposureTime>20</ExposureTime>
+  <ExposureTime.Default>20</ExposureTime.Default>
+  <ExposureTime.Enabled>true</ExposureTime.Enabled>
+  <ExposureTime.GuiHint>GuiLogSlider</ExposureTime.GuiHint>
+  <ExposureTime.Increment>0.1</ExposureTime.Increment>
+  <ExposureTime.Max>2000</ExposureTime.Max>
+  <ExposureTime.Min>0.1</ExposureTime.Min>
+  <ExposureTime.Type>DoubleType</ExposureTime.Type>
+  <Frame>0,0,1024,1024</Frame>
+  <Frame.Enabled>true</Frame.Enabled>
+  <Frame.GuiHint>GuiRect</Frame.GuiHint>
+  <Frame.Max>0,0,1024,1024</Frame.Max>
+  <Frame.Type>RectType</Frame.Type>
+  <FrameRate>0</FrameRate>
+  <FrameRate.Default>0</FrameRate.Default>
+  <FrameRate.DisplayOrder>203</FrameRate.DisplayOrder>
+  <FrameRate.GuiHint>GuiTextBox</FrameRate.GuiHint>
+  <FrameRate.Label>Acquire|Live Frame Rate</FrameRate.Label>
+  <FrameRate.Mode>Expert</FrameRate.Mode>
+  <FrameRate.Readonly>true</FrameRate.Readonly>
+  <FrameRate.Type>DoubleType</FrameRate.Type>
+  <FrameRateTarget>30</FrameRateTarget>
+  <FrameRateTarget.Default>30</FrameRateTarget.Default>
+  <FrameRateTarget.DisplayOrder>202</FrameRateTarget.DisplayOrder>
+  <FrameRateTarget.Enabled>true</FrameRateTarget.Enabled>
+  <FrameRateTarget.GuiHint>GuiSlider</FrameRateTarget.GuiHint>
+  <FrameRateTarget.Increment>1</FrameRateTarget.Increment>
+  <FrameRateTarget.Label>Acquire|Live Frame Rate Max</FrameRateTarget.Label>
+  <FrameRateTarget.Max>100</FrameRateTarget.Max>
+  <FrameRateTarget.Min>1</FrameRateTarget.Min>
+  <FrameRateTarget.Mode>Expert</FrameRateTarget.Mode>
+  <FrameRateTarget.Type>DoubleType</FrameRateTarget.Type>
+  <FrameTarget></FrameTarget>
+  <FrameTarget.GuiHint>GuiRect</FrameTarget.GuiHint>
+  <FrameTarget.Label>Acquire|Frame Target</FrameTarget.Label>
+  <FrameTarget.Mode>Debug</FrameTarget.Mode>
+  <FrameTarget.Readonly>true</FrameTarget.Readonly>
+  <HardwareImagePlugIn>Zeiss.Micro.Cameras.TestCam.TestCamDriver</HardwareImagePlugIn>
+  <HardwareImagePlugIn.Default></HardwareImagePlugIn.Default>
+  <HardwareImagePlugIn.Enabled>true</HardwareImagePlugIn.Enabled>
+  <HardwareImagePlugIn.GuiHint>GuiTextBox</HardwareImagePlugIn.GuiHint>
+  <HardwareImagePlugIn.Label>Acquire|HardwareImage Plug-In</HardwareImagePlugIn.Label>
+  <HardwareImagePlugIn.Type>StringType</HardwareImagePlugIn.Type>
+  <HardwareSignals>false</HardwareSignals>
+  <HardwareSignals.Default>false</HardwareSignals.Default>
+  <HardwareSignals.Enabled>false</HardwareSignals.Enabled>
+  <HardwareSignals.GuiHint>GuiCheckBox</HardwareSignals.GuiHint>
+  <HardwareSignals.Label>Acquire|Simulate Hardware Signal</HardwareSignals.Label>
+  <HardwareSignals.Mode>Expert, NoPersist</HardwareSignals.Mode>
+  <HardwareSignals.Type>BoolType</HardwareSignals.Type>
+  <HDRBits>2</HDRBits>
+  <HDRBits.Default>2</HDRBits.Default>
+  <HDRBits.Enabled>false</HDRBits.Enabled>
+  <HDRBits.GuiHint>GuiNone</HDRBits.GuiHint>
+  <HDRBits.Increment>2</HDRBits.Increment>
+  <HDRBits.Max>6</HDRBits.Max>
+  <HDRBits.Min>2</HDRBits.Min>
+  <HDRBits.Mode>Expert</HDRBits.Mode>
+  <HDRBits.Type>IntegerType</HDRBits.Type>
+  <HWI_LampIntensity>50.0</HWI_LampIntensity>
+  <HWI_LampIntensity.Default>0</HWI_LampIntensity.Default>
+  <HWI_LampIntensity.DisplayOrder>400</HWI_LampIntensity.DisplayOrder>
+  <HWI_LampIntensity.Enabled>false</HWI_LampIntensity.Enabled>
+  <HWI_LampIntensity.GuiHint>GuiSlider</HWI_LampIntensity.GuiHint>
+  <HWI_LampIntensity.Increment>0.1</HWI_LampIntensity.Increment>
+  <HWI_LampIntensity.Label>Lamp Intensity</HWI_LampIntensity.Label>
+  <HWI_LampIntensity.Max>100</HWI_LampIntensity.Max>
+  <HWI_LampIntensity.Min>0</HWI_LampIntensity.Min>
+  <HWI_LampIntensity.Mode>NoPersist</HWI_LampIntensity.Mode>
+  <HWI_LampIntensity.Type>DoubleType</HWI_LampIntensity.Type>
+  <HWI_StagePosition></HWI_StagePosition>
+  <HWI_StagePosition.Default></HWI_StagePosition.Default>
+  <HWI_StagePosition.DisplayOrder>400</HWI_StagePosition.DisplayOrder>
+  <HWI_StagePosition.Enabled>false</HWI_StagePosition.Enabled>
+  <HWI_StagePosition.GuiHint>GuiTextBox</HWI_StagePosition.GuiHint>
+  <HWI_StagePosition.Label>Stage Position</HWI_StagePosition.Label>
+  <HWI_StagePosition.Mode>NoPersist</HWI_StagePosition.Mode>
+  <HWI_StagePosition.Type>StringType</HWI_StagePosition.Type>
+  <HWI_TotalMagnification>1</HWI_TotalMagnification>
+  <HWI_TotalMagnification.Default>1</HWI_TotalMagnification.Default>
+  <HWI_TotalMagnification.Enabled>true</HWI_TotalMagnification.Enabled>
+  <HWI_TotalMagnification.GuiHint>GuiTextBox</HWI_TotalMagnification.GuiHint>
+  <HWI_TotalMagnification.Label>Total Magnification</HWI_TotalMagnification.Label>
+  <HWI_TotalMagnification.Mode>NoPersist</HWI_TotalMagnification.Mode>
+  <HWI_TotalMagnification.Type>DoubleType</HWI_TotalMagnification.Type>
+  <ImageByteSize>2097152</ImageByteSize>
+  <ImageByteSize.Default>0</ImageByteSize.Default>
+  <ImageByteSize.Readonly>true</ImageByteSize.Readonly>
+  <ImageByteSize.Type>IntegerType</ImageByteSize.Type>
+  <ImageClipBorder>0;0;0;0</ImageClipBorder>
+  <ImageClipBorder.Enabled>true</ImageClipBorder.Enabled>
+  <ImageClipBorder.GuiHint>GuiTextBox</ImageClipBorder.GuiHint>
+  <ImageClipBorder.Label>Acquire|Image Clip Border</ImageClipBorder.Label>
+  <ImageClipBorder.Mode>Expert</ImageClipBorder.Mode>
+  <ImageClipBorder.Type>RectType</ImageClipBorder.Type>
+  <ImageCount>3</ImageCount>
+  <ImageCount.Default>3</ImageCount.Default>
+  <ImageCount.DisplayOrder>302</ImageCount.DisplayOrder>
+  <ImageCount.Enabled>false</ImageCount.Enabled>
+  <ImageCount.GuiHint>GuiSlider</ImageCount.GuiHint>
+  <ImageCount.Increment>1</ImageCount.Increment>
+  <ImageCount.Label>Acquire|Image Count</ImageCount.Label>
+  <ImageCount.Max>32</ImageCount.Max>
+  <ImageCount.Min>2</ImageCount.Min>
+  <ImageCount.Mode>Expert</ImageCount.Mode>
+  <ImageCount.Type>IntegerType</ImageCount.Type>
+  <ImageDeliveryBufferCount>4</ImageDeliveryBufferCount>
+  <ImageDeliveryBufferCount.Default>4</ImageDeliveryBufferCount.Default>
+  <ImageDeliveryBufferCount.GuiHint>GuiNone</ImageDeliveryBufferCount.GuiHint>
+  <ImageDeliveryBufferCount.Type>IntegerType</ImageDeliveryBufferCount.Type>
+  <ImageFrame>0,0,1024,1024</ImageFrame>
+  <ImageFrame.Max>0,0,1024,1024</ImageFrame.Max>
+  <ImageFrame.Readonly>true</ImageFrame.Readonly>
+  <ImageFrame.Type>RectType</ImageFrame.Type>
+  <ImageMode>3</ImageMode>
+  <ImageMode.Default></ImageMode.Default>
+  <ImageMode.DisplayOrder>402</ImageMode.DisplayOrder>
+  <ImageMode.Enabled>true</ImageMode.Enabled>
+  <ImageMode.GuiHint>GuiComboBox</ImageMode.GuiHint>
+  <ImageMode.Label>Image Mode</ImageMode.Label>
+  <ImageMode.ListItems>0|PreLoadFiles|PreLoadFiles,1|LoadFiles|LoadFiles,2|TestDisplay|TestDisplay,3|TestImage|TestImage,4|SolidRamp|SolidRamp,5|HardwareImage|HardwareImage,6|Lattice Lightsheet |Lattice Lightsheet ,7|MixedModeTest|MixedModeTest,8|Fractal TestImage|Fractal TestImage,9|Cell TestImage|Cell TestImage</ImageMode.ListItems>
+  <ImageMode.Type>IntegerType</ImageMode.Type>
+  <ImageOrientation>0</ImageOrientation>
+  <ImageOrientation.Default>0</ImageOrientation.Default>
+  <ImageOrientation.Enabled>true</ImageOrientation.Enabled>
+  <ImageOrientation.GuiHint>GuiComboBox</ImageOrientation.GuiHint>
+  <ImageOrientation.Label>Orientation</ImageOrientation.Label>
+  <ImageOrientation.ListItems>0|Original|Original,1|Flip|Flip Horizontally,2|Reverse|Flip Vertically,4|Rotate|Rotate 90 CW,7|FlipReverseRotate|Rotate 90 CCW,3|FlipReverse|Rotate 180,6|ReverseRotate|Mirror at +45 Diagonal,5|FlipRotate|Mirror at -45 Diagonal</ImageOrientation.ListItems>
+  <ImageOrientation.Type>IntegerType</ImageOrientation.Type>
+  <ImagePath>C:\Users\Cottrell\Documents\Carl Zeiss\ZEN\Documents\Camera Settings\TestCam_S0</ImagePath>
+  <ImagePath.Default>C:\Users\Cottrell\Documents\Carl Zeiss\ZEN\Documents\Camera Settings\TestCam_S0</ImagePath.Default>
+  <ImagePath.DisplayOrder>401</ImagePath.DisplayOrder>
+  <ImagePath.Enabled>true</ImagePath.Enabled>
+  <ImagePath.GuiHint>GuiTextBox</ImagePath.GuiHint>
+  <ImagePath.Label>Image Path</ImagePath.Label>
+  <ImagePath.Type>StringType</ImagePath.Type>
+  <ImagePixelAccuracy>0.000244140625</ImagePixelAccuracy>
+  <ImagePixelAccuracy.Default>0.00390625</ImagePixelAccuracy.Default>
+  <ImagePixelAccuracy.Readonly>true</ImagePixelAccuracy.Readonly>
+  <ImagePixelAccuracy.Type>DoubleType</ImagePixelAccuracy.Type>
+  <ImagePixelDistances>1,1</ImagePixelDistances>
+  <ImagePixelDistances.Readonly>true</ImagePixelDistances.Readonly>
+  <ImagePixelDistances.Type>SizeType</ImagePixelDistances.Type>
+  <ImagePixelType>Gray16</ImagePixelType>
+  <ImagePixelType.Default>0</ImagePixelType.Default>
+  <ImagePixelType.Readonly>true</ImagePixelType.Readonly>
+  <ImagePixelType.Type>IntegerType</ImagePixelType.Type>
+  <LiveBinning>1,1</LiveBinning>
+  <LiveBinning.GuiHint>GuiNone</LiveBinning.GuiHint>
+  <LiveBinning.Readonly>true</LiveBinning.Readonly>
+  <LiveBinning.Type>SizeType</LiveBinning.Type>
+  <LiveExposureTime>20</LiveExposureTime>
+  <LiveExposureTime.Default>20</LiveExposureTime.Default>
+  <LiveExposureTime.Mode>Internal</LiveExposureTime.Mode>
+  <LiveExposureTime.Readonly>true</LiveExposureTime.Readonly>
+  <LiveExposureTime.Type>DoubleType</LiveExposureTime.Type>
+  <LiveFrame>0,0,1024,1024</LiveFrame>
+  <LiveFrame.Readonly>true</LiveFrame.Readonly>
+  <LiveFrame.Type>RectType</LiveFrame.Type>
+  <LiveImageByteSize>2097152</LiveImageByteSize>
+  <LiveImageByteSize.Default>0</LiveImageByteSize.Default>
+  <LiveImageByteSize.Readonly>true</LiveImageByteSize.Readonly>
+  <LiveImageByteSize.Type>IntegerType</LiveImageByteSize.Type>
+  <LiveImageFrame>0,0,1024,1024</LiveImageFrame>
+  <LiveImageFrame.Max>0,0,1024,1024</LiveImageFrame.Max>
+  <LiveImageFrame.Readonly>true</LiveImageFrame.Readonly>
+  <LiveImageFrame.Type>RectType</LiveImageFrame.Type>
+  <LiveImagePixelAccuracy>0.000244140625</LiveImagePixelAccuracy>
+  <LiveImagePixelAccuracy.Default>0.00390625</LiveImagePixelAccuracy.Default>
+  <LiveImagePixelAccuracy.Readonly>true</LiveImagePixelAccuracy.Readonly>
+  <LiveImagePixelAccuracy.Type>DoubleType</LiveImagePixelAccuracy.Type>
+  <LiveImagePixelDistances>1,1</LiveImagePixelDistances>
+  <LiveImagePixelDistances.Readonly>true</LiveImagePixelDistances.Readonly>
+  <LiveImagePixelDistances.Type>SizeType</LiveImagePixelDistances.Type>
+  <LiveImagePixelType>Gray16</LiveImagePixelType>
+  <LiveImagePixelType.Default>0</LiveImagePixelType.Default>
+  <LiveImagePixelType.Readonly>true</LiveImagePixelType.Readonly>
+  <LiveImagePixelType.Type>IntegerType</LiveImagePixelType.Type>
+  <LiveMode>0</LiveMode>
+  <LiveMode.Default>0</LiveMode.Default>
+  <LiveMode.DisplayOrder>200</LiveMode.DisplayOrder>
+  <LiveMode.Enabled>true</LiveMode.Enabled>
+  <LiveMode.GuiHint>GuiComboBox</LiveMode.GuiHint>
+  <LiveMode.Label>Acquire|Live Mode</LiveMode.Label>
+  <LiveMode.ListItems>0|Normal|Normal,1|NoWYSIWYG|No WYSIWYG,2|Average|Average,3|ExternalLive|External Live,4|ExternalSnap|External Snap,5|BlockScan|Block Scan,6|Snap|Snap,7|SnapBinning|Snap Binning,8|Thumbnail|Thumbnail</LiveMode.ListItems>
+  <LiveMode.Mode>Expert</LiveMode.Mode>
+  <LiveMode.Type>IntegerType</LiveMode.Type>
+  <LiveSpeed>0</LiveSpeed>
+  <LiveSpeed.Default>0</LiveSpeed.Default>
+  <LiveSpeed.Enabled>true</LiveSpeed.Enabled>
+  <LiveSpeed.GuiHint>GuiComboBox</LiveSpeed.GuiHint>
+  <LiveSpeed.ListItems>0|Slow|Slow,1|Medium|Medium,2|Fast|Fast</LiveSpeed.ListItems>
+  <LiveSpeed.Type>IntegerType</LiveSpeed.Type>
+  <LiveValidBits>12</LiveValidBits>
+  <LiveValidBits.Default>8</LiveValidBits.Default>
+  <LiveValidBits.Readonly>true</LiveValidBits.Readonly>
+  <LiveValidBits.Type>IntegerType</LiveValidBits.Type>
+  <LogCameraEvents>false</LogCameraEvents>
+  <LogCameraEvents.Default></LogCameraEvents.Default>
+  <LogCameraEvents.DisplayOrder>409</LogCameraEvents.DisplayOrder>
+  <LogCameraEvents.Enabled>true</LogCameraEvents.Enabled>
+  <LogCameraEvents.GuiHint>GuiCheckBox</LogCameraEvents.GuiHint>
+  <LogCameraEvents.Label>Log Camera Events</LogCameraEvents.Label>
+  <LogCameraEvents.Mode>Expert</LogCameraEvents.Mode>
+  <LogCameraEvents.Type>BoolType</LogCameraEvents.Type>
+  <ModifyLiveImage>false</ModifyLiveImage>
+  <ModifyLiveImage.Default></ModifyLiveImage.Default>
+  <ModifyLiveImage.DisplayOrder>400</ModifyLiveImage.DisplayOrder>
+  <ModifyLiveImage.Enabled>true</ModifyLiveImage.Enabled>
+  <ModifyLiveImage.GuiHint>GuiCheckBox</ModifyLiveImage.GuiHint>
+  <ModifyLiveImage.Label>Acquire|Modify Live Image</ModifyLiveImage.Label>
+  <ModifyLiveImage.Mode>Expert, NoPersist</ModifyLiveImage.Mode>
+  <ModifyLiveImage.Type>BoolType</ModifyLiveImage.Type>
+  <NoiseFilter>false</NoiseFilter>
+  <NoiseFilter.Default>false</NoiseFilter.Default>
+  <NoiseFilter.Enabled>true</NoiseFilter.Enabled>
+  <NoiseFilter.GuiHint>GuiCheckBox</NoiseFilter.GuiHint>
+  <NoiseFilter.Type>BoolType</NoiseFilter.Type>
+  <NoiseFilterThreshold>1.5</NoiseFilterThreshold>
+  <NoiseFilterThreshold.Default>1.5</NoiseFilterThreshold.Default>
+  <NoiseFilterThreshold.Enabled>true</NoiseFilterThreshold.Enabled>
+  <NoiseFilterThreshold.GuiHint>GuiSlider</NoiseFilterThreshold.GuiHint>
+  <NoiseFilterThreshold.Increment>0.1</NoiseFilterThreshold.Increment>
+  <NoiseFilterThreshold.Max>10</NoiseFilterThreshold.Max>
+  <NoiseFilterThreshold.Min>0</NoiseFilterThreshold.Min>
+  <NoiseFilterThreshold.Type>DoubleType</NoiseFilterThreshold.Type>
+  <PerformFunction>0</PerformFunction>
+  <PerformFunction.Default></PerformFunction.Default>
+  <PerformFunction.DisplayOrder>410</PerformFunction.DisplayOrder>
+  <PerformFunction.Enabled>true</PerformFunction.Enabled>
+  <PerformFunction.GuiHint>GuiComboBox</PerformFunction.GuiHint>
+  <PerformFunction.Label>Perform Function</PerformFunction.Label>
+  <PerformFunction.ListItems>0|None|None,1|Reset Image Pointers|Reset Image Pointers,6|Display Default Parameters|Display Default Parameters,13|Time Image Processing|Time Image Processing,21|Queue Named Command|Queue Named Command,100|Get Camera Status|Get Camera Status</PerformFunction.ListItems>
+  <PerformFunction.Mode>NoPersist</PerformFunction.Mode>
+  <PerformFunction.Type>IntegerType</PerformFunction.Type>
+  <QuiteMode>false</QuiteMode>
+  <QuiteMode.Default>false</QuiteMode.Default>
+  <QuiteMode.DisplayOrder>409</QuiteMode.DisplayOrder>
+  <QuiteMode.Enabled>true</QuiteMode.Enabled>
+  <QuiteMode.GuiHint>GuiCheckBox</QuiteMode.GuiHint>
+  <QuiteMode.Label>Stresstest quiet mode</QuiteMode.Label>
+  <QuiteMode.Mode>NoPersist</QuiteMode.Mode>
+  <QuiteMode.Type>BoolType</QuiteMode.Type>
+  <ResamplingModeParameterKey>0</ResamplingModeParameterKey>
+  <ResamplingModeParameterKey.Default>0</ResamplingModeParameterKey.Default>
+  <ResamplingModeParameterKey.Enabled>true</ResamplingModeParameterKey.Enabled>
+  <ResamplingModeParameterKey.GuiHint>GuiComboBox</ResamplingModeParameterKey.GuiHint>
+  <ResamplingModeParameterKey.Label>Post Processing|Resample Mode</ResamplingModeParameterKey.Label>
+  <ResamplingModeParameterKey.ListItems>0|Nearest Neighbour|Nearest Neighbour,1|Linear|Linear</ResamplingModeParameterKey.ListItems>
+  <ResamplingModeParameterKey.Mode>Debug</ResamplingModeParameterKey.Mode>
+  <ResamplingModeParameterKey.Type>IntegerType</ResamplingModeParameterKey.Type>
+  <ResamplingParameterKey>1</ResamplingParameterKey>
+  <ResamplingParameterKey.Default>1</ResamplingParameterKey.Default>
+  <ResamplingParameterKey.Enabled>true</ResamplingParameterKey.Enabled>
+  <ResamplingParameterKey.GuiHint>GuiSlider</ResamplingParameterKey.GuiHint>
+  <ResamplingParameterKey.Increment>1E-06</ResamplingParameterKey.Increment>
+  <ResamplingParameterKey.Label>Post Processing|Resample</ResamplingParameterKey.Label>
+  <ResamplingParameterKey.Max>500</ResamplingParameterKey.Max>
+  <ResamplingParameterKey.Min>0.001</ResamplingParameterKey.Min>
+  <ResamplingParameterKey.Mode>Debug</ResamplingParameterKey.Mode>
+  <ResamplingParameterKey.Type>DoubleType</ResamplingParameterKey.Type>
+  <Resolution>4</Resolution>
+  <Resolution.Default>0</Resolution.Default>
+  <Resolution.Enabled>true</Resolution.Enabled>
+  <Resolution.GuiHint>GuiComboBox</Resolution.GuiHint>
+  <Resolution.ListItems>0|256x256|256x256,1|512x512|512x512,2|800x600|800x600,3|1024x768|1024x768,4|1024x1024|1024x1024,5|1600x1200|1600x1200,6|2048x2048|2048x2048,7|4250x2838|4250x2838</Resolution.ListItems>
+  <Resolution.Type>IntegerType</Resolution.Type>
+  <SampleFinderTriggeredTransmittedLightAcquisition>false</SampleFinderTriggeredTransmittedLightAcquisition>
+  <SampleFinderTriggeredTransmittedLightAcquisition.Default>false</SampleFinderTriggeredTransmittedLightAcquisition.Default>
+  <SampleFinderTriggeredTransmittedLightAcquisition.Type>BoolType</SampleFinderTriggeredTransmittedLightAcquisition.Type>
+  <SaveSnap>false</SaveSnap>
+  <SaveSnap.Default></SaveSnap.Default>
+  <SaveSnap.DisplayOrder>400</SaveSnap.DisplayOrder>
+  <SaveSnap.Enabled>true</SaveSnap.Enabled>
+  <SaveSnap.GuiHint>GuiCheckBox</SaveSnap.GuiHint>
+  <SaveSnap.Label>Acquire|Save Snap</SaveSnap.Label>
+  <SaveSnap.Mode>Expert, NoPersist</SaveSnap.Mode>
+  <SaveSnap.Type>BoolType</SaveSnap.Type>
+  <SequenceCount>0</SequenceCount>
+  <SequenceCount.Enabled>false</SequenceCount.Enabled>
+  <SequenceCount.GuiHint>GuiTextBox</SequenceCount.GuiHint>
+  <SequenceCount.Label>Acquire|Sequence Image Count</SequenceCount.Label>
+  <SequenceCount.Mode>Debug, NoPersist</SequenceCount.Mode>
+  <SequenceProgress>true</SequenceProgress>
+  <SequenceProgress.Default>true</SequenceProgress.Default>
+  <SequenceProgress.GuiHint>GuiNone</SequenceProgress.GuiHint>
+  <SequenceProgress.Type>BoolType</SequenceProgress.Type>
+  <ShadingReference>false</ShadingReference>
+  <ShadingReference.Default>false</ShadingReference.Default>
+  <ShadingReference.Enabled>false</ShadingReference.Enabled>
+  <ShadingReference.GuiHint>GuiCheckBox</ShadingReference.GuiHint>
+  <ShadingReference.Type>BoolType</ShadingReference.Type>
+  <ShadingReferenceId>None</ShadingReferenceId>
+  <ShadingReferenceId.Mode>Internal</ShadingReferenceId.Mode>
+  <ShadingReferenceSource>0</ShadingReferenceSource>
+  <ShadingReferenceSource.Default>1</ShadingReferenceSource.Default>
+  <ShadingReferenceSource.GuiHint>GuiComboBox</ShadingReferenceSource.GuiHint>
+  <ShadingReferenceSource.ListItems>0|Global|Global,1|Specific|Specific,2|CellDiscoverer|CellDiscoverer</ShadingReferenceSource.ListItems>
+  <ShadingReferenceSource.Type>IntegerType</ShadingReferenceSource.Type>
+  <ShadingReferenceSourceVisibility>true</ShadingReferenceSourceVisibility>
+  <ShadingReferenceSourceVisibility.Default>true</ShadingReferenceSourceVisibility.Default>
+  <ShadingReferenceSourceVisibility.GuiHint>GuiNone</ShadingReferenceSourceVisibility.GuiHint>
+  <ShadingReferenceSourceVisibility.Mode>NoPersist</ShadingReferenceSourceVisibility.Mode>
+  <ShadingReferenceSourceVisibility.Type>BoolType</ShadingReferenceSourceVisibility.Type>
+  <ShadingStrength>1</ShadingStrength>
+  <ShadingStrength.Default>1</ShadingStrength.Default>
+  <ShadingStrength.Enabled>true</ShadingStrength.Enabled>
+  <ShadingStrength.GuiHint>GuiSlider</ShadingStrength.GuiHint>
+  <ShadingStrength.Increment>0.01</ShadingStrength.Increment>
+  <ShadingStrength.Label>Post Processing|Shading Strength</ShadingStrength.Label>
+  <ShadingStrength.Max>2</ShadingStrength.Max>
+  <ShadingStrength.Min>0.1</ShadingStrength.Min>
+  <ShadingStrength.Mode>Expert</ShadingStrength.Mode>
+  <ShadingStrength.Type>DoubleType</ShadingStrength.Type>
+  <ShadingUseBias>true</ShadingUseBias>
+  <ShadingUseBias.Default>true</ShadingUseBias.Default>
+  <ShadingUseBias.Enabled>true</ShadingUseBias.Enabled>
+  <ShadingUseBias.GuiHint>GuiCheckBox</ShadingUseBias.GuiHint>
+  <ShadingUseBias.Label>Post Processing|Shading Use Bias</ShadingUseBias.Label>
+  <ShadingUseBias.Mode>Expert</ShadingUseBias.Mode>
+  <ShadingUseBias.Type>BoolType</ShadingUseBias.Type>
+  <SimulateExposure>false</SimulateExposure>
+  <SimulateExposure.Default></SimulateExposure.Default>
+  <SimulateExposure.DisplayOrder>400</SimulateExposure.DisplayOrder>
+  <SimulateExposure.Enabled>false</SimulateExposure.Enabled>
+  <SimulateExposure.GuiHint>GuiCheckBox</SimulateExposure.GuiHint>
+  <SimulateExposure.Label>Acquire|Simulate Exposure</SimulateExposure.Label>
+  <SimulateExposure.Type>BoolType</SimulateExposure.Type>
+  <SnapMode>0</SnapMode>
+  <SnapMode.Default>0</SnapMode.Default>
+  <SnapMode.DisplayOrder>300</SnapMode.DisplayOrder>
+  <SnapMode.Enabled>true</SnapMode.Enabled>
+  <SnapMode.GuiHint>GuiComboBox</SnapMode.GuiHint>
+  <SnapMode.Label>Acquire|Snap Mode</SnapMode.Label>
+  <SnapMode.ListItems>0|Normal|Normal,1|WYSIWYG|WYSIWYG,2|Average|Average,3|HDR|HDR,4|Graph|Graph,5|BlockScan|Block Scan,9|AutoFocus|Autofocus,8|Live|Live,11|Thumbnail|Live</SnapMode.ListItems>
+  <SnapMode.Mode>Expert, NoPersist</SnapMode.Mode>
+  <SnapMode.Type>IntegerType</SnapMode.Type>
+  <SpecimenCenterPosition></SpecimenCenterPosition>
+  <SpecimenCenterPosition.Default></SpecimenCenterPosition.Default>
+  <SpecimenCenterPosition.DisplayOrder>400</SpecimenCenterPosition.DisplayOrder>
+  <SpecimenCenterPosition.Enabled>false</SpecimenCenterPosition.Enabled>
+  <SpecimenCenterPosition.GuiHint>GuiTextBox</SpecimenCenterPosition.GuiHint>
+  <SpecimenCenterPosition.Label>Specimen Center Position</SpecimenCenterPosition.Label>
+  <SpecimenCenterPosition.Type>StringType</SpecimenCenterPosition.Type>
+  <StopStressTestOnError>true</StopStressTestOnError>
+  <StopStressTestOnError.Default>true</StopStressTestOnError.Default>
+  <StopStressTestOnError.DisplayOrder>409</StopStressTestOnError.DisplayOrder>
+  <StopStressTestOnError.Enabled>true</StopStressTestOnError.Enabled>
+  <StopStressTestOnError.GuiHint>GuiCheckBox</StopStressTestOnError.GuiHint>
+  <StopStressTestOnError.Label>Stop Stresstest On Error</StopStressTestOnError.Label>
+  <StopStressTestOnError.Mode>NoPersist</StopStressTestOnError.Mode>
+  <StopStressTestOnError.Type>BoolType</StopStressTestOnError.Type>
+  <TestImageMode>0</TestImageMode>
+  <TestImageMode.Default></TestImageMode.Default>
+  <TestImageMode.DisplayOrder>403</TestImageMode.DisplayOrder>
+  <TestImageMode.Enabled>true</TestImageMode.Enabled>
+  <TestImageMode.GuiHint>GuiComboBox</TestImageMode.GuiHint>
+  <TestImageMode.Label>TestImage Mode</TestImageMode.Label>
+  <TestImageMode.ListItems>0|Dynamic|Dynamic,1|SemiDynamic|SemiDynamic,2|Static|Static</TestImageMode.ListItems>
+  <TestImageMode.Type>IntegerType</TestImageMode.Type>
+  <ThumbnailSize>3</ThumbnailSize>
+  <ThumbnailSize.Default>3</ThumbnailSize.Default>
+  <ThumbnailSize.DisplayOrder>303</ThumbnailSize.DisplayOrder>
+  <ThumbnailSize.Enabled>false</ThumbnailSize.Enabled>
+  <ThumbnailSize.GuiHint>GuiComboBox</ThumbnailSize.GuiHint>
+  <ThumbnailSize.Label>Acquire|Thumbnail Size</ThumbnailSize.Label>
+  <ThumbnailSize.ListItems>0|32x32|32x32,1|64x64|64x64,2|128x128|128x128,3|256x256|256x256,4|512x512|512x512,5|1024x1024|1024x1024,6|2048x2048|2048x2048</ThumbnailSize.ListItems>
+  <ThumbnailSize.Mode>Expert</ThumbnailSize.Mode>
+  <ThumbnailSize.Type>IntegerType</ThumbnailSize.Type>
+  <UnsharpMask>false</UnsharpMask>
+  <UnsharpMask.Default>false</UnsharpMask.Default>
+  <UnsharpMask.Enabled>true</UnsharpMask.Enabled>
+  <UnsharpMask.GuiHint>GuiCheckBox</UnsharpMask.GuiHint>
+  <UnsharpMask.Type>BoolType</UnsharpMask.Type>
+  <UnsharpMaskState>&lt;UnsharpMask&gt;
+  &lt;ColorMode&gt;1&lt;/ColorMode&gt;
+  &lt;AutoContrastMode&gt;0&lt;/AutoContrastMode&gt;
+  &lt;ThresholdMode&gt;1&lt;/ThresholdMode&gt;
+  &lt;Strength&gt;1&lt;/Strength&gt;
+  &lt;Radius&gt;2&lt;/Radius&gt;
+  &lt;LowThreshold&gt;0&lt;/LowThreshold&gt;
+  &lt;HighThreshold&gt;100&lt;/HighThreshold&gt;
+  &lt;AutoContrastTolerance&gt;1&lt;/AutoContrastTolerance&gt;
+  &lt;ClipToValidBits&gt;true&lt;/ClipToValidBits&gt;
+  &lt;PerformInPlace&gt;false&lt;/PerformInPlace&gt;
+&lt;/UnsharpMask&gt;</UnsharpMaskState>
+  <UnsharpMaskState.Default></UnsharpMaskState.Default>
+  <UnsharpMaskState.Type>StringType</UnsharpMaskState.Type>
+  <UseBasicCameraContinuousAcquisition>false</UseBasicCameraContinuousAcquisition>
+  <UseBasicCameraContinuousAcquisition.Default></UseBasicCameraContinuousAcquisition.Default>
+  <UseBasicCameraContinuousAcquisition.DisplayOrder>400</UseBasicCameraContinuousAcquisition.DisplayOrder>
+  <UseBasicCameraContinuousAcquisition.Enabled>true</UseBasicCameraContinuousAcquisition.Enabled>
+  <UseBasicCameraContinuousAcquisition.GuiHint>GuiCheckBox</UseBasicCameraContinuousAcquisition.GuiHint>
+  <UseBasicCameraContinuousAcquisition.Label>Acquire|Use BasicCamera ContinuousAcquisition</UseBasicCameraContinuousAcquisition.Label>
+  <UseBasicCameraContinuousAcquisition.Mode>Expert</UseBasicCameraContinuousAcquisition.Mode>
+  <UseBasicCameraContinuousAcquisition.Type>BoolType</UseBasicCameraContinuousAcquisition.Type>
+  <UseDecoder>true</UseDecoder>
+  <UseDecoder.Default></UseDecoder.Default>
+  <UseDecoder.DisplayOrder>400</UseDecoder.DisplayOrder>
+  <UseDecoder.Enabled>true</UseDecoder.Enabled>
+  <UseDecoder.GuiHint>GuiCheckBox</UseDecoder.GuiHint>
+  <UseDecoder.Label>Acquire|Use Decoder</UseDecoder.Label>
+  <UseDecoder.Mode>Expert</UseDecoder.Mode>
+  <UseDecoder.Type>BoolType</UseDecoder.Type>
+  <UserCameraOrientation>0</UserCameraOrientation>
+  <UserCameraOrientation.Default>0</UserCameraOrientation.Default>
+  <UserCameraOrientation.Enabled>true</UserCameraOrientation.Enabled>
+  <UserCameraOrientation.GuiHint>GuiComboBox</UserCameraOrientation.GuiHint>
+  <UserCameraOrientation.Label>Acquire|Camera Orientation</UserCameraOrientation.Label>
+  <UserCameraOrientation.ListItems>0|Original|Original,1|Flip|Flip Horizontally,2|Reverse|Flip Vertically,4|Rotate|Rotate 90 CW,7|FlipReverseRotate|Rotate 90 CCW,3|FlipReverse|Rotate 180,6|ReverseRotate|Mirror at +45 Diagonal,5|FlipRotate|Mirror at -45 Diagonal</UserCameraOrientation.ListItems>
+  <UserCameraOrientation.Mode>Expert</UserCameraOrientation.Mode>
+  <UserCameraOrientation.Type>IntegerType</UserCameraOrientation.Type>
+  <ValidBits>12</ValidBits>
+  <ValidBits.Default>8</ValidBits.Default>
+  <ValidBits.Readonly>true</ValidBits.Readonly>
+  <ValidBits.Type>IntegerType</ValidBits.Type>
+  <ValidPixelMaximum>255</ValidPixelMaximum>
+  <ValidPixelMaximum.Default>255</ValidPixelMaximum.Default>
+  <ValidPixelMaximum.Readonly>true</ValidPixelMaximum.Readonly>
+  <ValidPixelMaximum.Type>IntegerType</ValidPixelMaximum.Type>
+</CameraParameterCollection>

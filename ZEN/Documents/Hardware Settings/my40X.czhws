@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HardwareSetting Name="my40X.czhws">
+  <ParameterCollection Id="MTBCamera_MTBTube_Cameraport.Axiocam705c">
+    <TheoreticalTotalMagnification Status="Valid" IsActivated="true" IsReadOnly="true">25.2</TheoreticalTotalMagnification>
+    <TotalMagnification Status="Valid" IsActivated="true" IsReadOnly="true">25.2</TotalMagnification>
+    <DefaultScalingUnit Status="Valid" IsActivated="true" IsReadOnly="true">µm</DefaultScalingUnit>
+    <RoiCenterOffsetX Status="Valid" IsActivated="true" IsReadOnly="true">0</RoiCenterOffsetX>
+    <RoiCenterOffsetY Status="Valid" IsActivated="true" IsReadOnly="true">0</RoiCenterOffsetY>
+    <TotalAperture Status="Valid" IsActivated="true" IsReadOnly="true">-1</TotalAperture>
+  </ParameterCollection>
+</HardwareSetting>

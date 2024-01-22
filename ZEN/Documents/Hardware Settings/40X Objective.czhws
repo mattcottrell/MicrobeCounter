@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HardwareSetting Name="40X Objective.czhws">
+  <ParameterCollection Id="MTBObjectiveChanger">
+    <PositionName Status="Valid" IsActivated="true">Objective.40x</PositionName>
+    <Position Status="Valid" IsActivated="true">2</Position>
+  </ParameterCollection>
+</HardwareSetting>
